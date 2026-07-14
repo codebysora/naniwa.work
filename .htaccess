@@ -1,0 +1,49 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# AOSSL
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ - [NC,L]
+
+
+# 旧サイト
+RewriteRule ^jobs.html business.html [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (saiyou|newgraduate) /recruit_newgraduate.html [R,L,QSA]
+
+</IfModule>
+# END Renewal
+
+AddOutputFilter INCLUDES .html .htm
+
+<IfModule mod_deflate.c>
+ExpiresActive On
+ExpiresByType image/gif "access plus 1 months" 
+ExpiresByType image/jpeg "access plus 1 months" 
+ExpiresByType image/png "access plus 1 months" 
+ExpiresByType image/x-icon "access plus 6 months" 
+ExpiresByType text/css "access plus 1 months" 
+ExpiresByType text/javascript "access plus 1 months" 
+ExpiresByType application/javascript "access plus 1 months" 
+ExpiresByType application/x-javascript "access plus 1 months"
+</IfModule> 
+
+
+# Redirect permanent / http://www.naniwa.co/
+# RewriteRule ^(.*)$ http://www.naniwa.co/ [L,QSA]
+
+# Added on '20180919_171133' by ControlPanel
+# Action application/x-httpd-php /global-bin/php-5.3.cgi
+# Added on '20180919_171147' by ControlPanel
+Action application/x-httpd-php /global-bin/php-5.6.cgi

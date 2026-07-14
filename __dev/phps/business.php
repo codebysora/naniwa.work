@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>事業内容 | 株式会社ナニワ</title>
+	<meta name="keywords" content="株式会社ナニワ" />
+	<meta name="description" content="関東シェアNo.1の施工会社。新築住宅・リフォーム工事など、住宅設備に関わる20種類以上の工事を一社で引き受けられる“総合力”が当社の強みです。" />
+
+	<?php require '_meta.php' ?>
+	<link rel="stylesheet" href="css/business.css" />
+
+</head>
+
+
+<body>
+
+
+<div id="page">
+
+<?php require_once '_header.php'; ?>
+
+	<main>
+
+		<div class="wrap">
+			<nav class="breadcrumb">
+				<ul>
+					<li><a href="index.php">トップ</a></li>
+					<li>事業内容</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="wrap" style="position: relative; z-index: 1;">
+			<h2 align="center"><img src="img/business/business_title@2x.png" alt="事業内容タイトル" width="263" /></h2>
+		</div>
+
+		<section class="mv cf">
+
+			<div class="pc" style="position: absolute; top: 40px; left: 0; right: 0; overflow-x: hidden; z-index: 0; ">
+				<img src="img/business/business_main_bg.PCB@2x.jpg" width="1960" style="margin-left: 50%; transform: translateX(-50%);" alt="施工プラニング" />
+			</div>
+
+			<div class="sp" style="margin-top: -1em"><img src="img/business/business_main.SP.png" alt="" width="100%" /></div>
+
+			<p class="wrap reform">他社にはない「広範囲の工程を一括管理」という総合力で、お客様からのニーズが増えております。<br />
+				主に手がけているのは、新築住宅に加え、継続的に需要が伸びているリフォームです。<br />
+				<img src="img/business/business_step.PC@2x.png" width="792" class="pc txt" alt="発注の流れ" />
+			</p>
+		</section>
+
+
+		<section class="wrap">
+			<p align="center">
+				<img src="img/business/business_step.SP.png" width="100%" class="sp" alt="発注の流れ" />
+			</p>
+		</section>
+
+
+		<section class="wrap cf">
+			<h2 class="cf">
+				<img src="img/business/business_title2@2x.png" width="228" alt="新築住宅"/>
+				<span><!-- 付随テキスト --></span>
+			</h2>
+
+			<ul class="housing">
+				<li>
+					<img src="img/business/business_contents01@2x.jpg" style="float: left" width="258" alt="界壁" />
+					<h3>界壁<span>OUTER WALL</span></h3>
+					<p>大部屋（101号室と102号室など）の壁を間仕切り石膏ボードを貼る工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents02@2x.jpg" style="float: left" width="258" alt="断熱" />
+					<h3>断熱<span>INSULATION</span></h3>
+					<p>外壁の内側に断熱材を敷き詰める工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents03@2x.jpg" style="float: left" width="258" alt="太陽光" />
+					<h3>太陽光<span>SOLAR POWER</span></h3>
+					<p>太陽光ソーラーパネルの取り付け工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents04@2x.jpg" style="float: left" width="258" alt="外装" />
+					<h3>外装<span>EXTERIOR WORK</span></h3>
+					<p>ベランダや屋上の手すりの取り付けや腰壁ベランダの笠木を取り付ける工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents05@2x.jpg" style="float: left" width="258" alt="耐火" />
+					<h3>耐火<span>REFRACTORY</span></h3>
+					<p>燃えにくい素材を鉄骨に巻き付ける工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents06@2x.jpg" style="float: left" width="258" alt="軒天" />
+					<h3>軒天<span>EAVE</span></h3>
+					<p>ベランダやピロティーの天井部に継鉄下地を取り付け、軒天ボードを取り付ける工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents07@2x.jpg" style="float: left" width="258" alt="防水" />
+					<h3>防水<span>ROOFING</span></h3>
+					<p>ベランダや屋上に塩化ビニールシートを敷き詰める工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents08@2x.jpg" style="float: left" width="258" alt="仮設" />
+					<h3>仮設<span>TEMPORARY</span></h3>
+					<p>敷地内を仮囲いする工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents09@2x.jpg" style="float: left" width="258" alt="桶" />
+					<h3>桶<span>PAIL</span></h3>
+					<p>雨桶の取付工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents10@2x.jpg" style="float: left" width="258" alt="足場" />
+					<h3>足場<span>SCAFFOLDING</span></h3>
+					<p>建物の回りに施工スタッフが施工する際に足をかけて作業する為の足場取付工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents11@2x.jpg" style="float: left" width="258" alt="シーリング" />
+					<h3>シーリング<span>SEALING</span></h3>
+					<p>外壁と外壁の溝にシーリング材を埋め込む工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents12@2x.jpg" style="float: left" width="258" alt="キッチン取付" />
+					<h3>キッチン取付<span>KITCHEN</span></h3>
+					<p>キッチン器具を取り付ける工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents13@2x.jpg" style="float: left" width="258" alt="ボード貼り" />
+					<h3>ボード貼り<span>BOAR PASTING</span></h3>
+					<p>小部屋（トイレや浴槽など）の壁を間仕切り石膏ボードを貼る仕事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents14@2x.jpg" style="float: left" width="258" alt="検査" />
+					<h3>検査<span>INSPECT</span></h3>
+					<p>施工後の品質確認検査工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents15@2x.jpg" style="float: left" width="258" alt="タッチアップ" />
+					<h3>タッチアップ<span>TOUCH -UP</span></h3>
+					<p>検査工事後、不具合箇所の手直し工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents16@2x.jpg" style="float: left" width="258" alt="ホイスト設置と管理" />
+					<h3>ホイスト設定と管理<span>HOIST</span></h3>
+					<p>狭小地で重機が入れない足場の一部に、材料搬入用の機材取付工事を管理する仕事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents17@2x.jpg" style="float: left" width="258" alt="目隠し" />
+					<h3>目隠し<span>BLINDFOLDS</span></h3>
+					<p>近隣のベランダや部屋からの目線を隠すための目隠し工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents18@2x.jpg" style="float: left" width="258" alt="箱もの" />
+					<h3>箱もの<span>PUBLIC BUILDING</span></h3>
+					<p>キッチンや食器棚等の取り付け工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents19@2x.jpg" style="float: left" width="258" alt="照明器具" />
+					<h3>照明器具<span>Lighting Equipment </span></h3>
+					<p>照明器具の取り付け工事</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="wrap cf">
+
+			<h2 class="cf">
+				<img src="img/business/business_title3@2x.png" width="248"  alt="リフォーム" />
+				<span><!-- 付随テキスト --></span>
+			</h2>
+
+			<ul class="housing">
+				<li>
+					<img src="img/business/business_contents20@2x.jpg" style="float: left" width="258" alt="吹付" />
+					<h3>吹付<span>SPLAYING</span></h3>
+					<p>外壁の塗装工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents21@2x.jpg" style="float: left" width="258" alt="AR桶" />
+					<h3>AR桶<span>AR PAIL</span></h3>
+					<p>竪樋の交換工事</p>
+				</li>
+				<li>
+					<img src="img/business/business_contents23@2x.jpg" style="float: left" width="258" alt="防水リプレイス" />
+					<h3>防水リプレイス<span>WATERPROOFING</span></h3>
+					<p>経年劣化したベランダや屋上に敷き詰めた塩化ビニールシートの張り替える工事</p>
+				</li>
+			</ul>
+
+		</section>
+
+		<section class=" recruit">
+			<div class="wrap">
+				<h3 align="center"><img src="img/common/title_fotter_recruit@2x.png" alt="求人募集" height="38" /></h3>
+				<ul class="flex">
+					<li><a href="recruit_newgraduate.php"><img src="img/common/bnr_recruit1@2x.jpg" alt="新卒採用" height="149" /></a></li>
+					<li><a href="recruit_partner.php"><img src="img/common/bnr_recruit2@2x.jpg" alt="職方募集" height="149" /></a></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+<?php require_once '_footer.php'; ?>
+
+</div>
+
+
+</body>
+</html>

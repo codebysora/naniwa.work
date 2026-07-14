@@ -1,0 +1,377 @@
+
+.ceo {
+	padding: 45px 0 50px;
+	background-color: #f3f5fb;
+}
+.ceo .president {
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+}
+.ceo .message {
+	padding-top: 45px;
+	display: block;
+}
+.ceo .sign {
+	display: inline-block;
+	margin-left: 348px;
+	padding: 80px 0 0;
+}
+
+section.logo {
+	padding: 80px 0 120px;
+}
+section.logo p {
+	line-height: 2em;
+	font-size: 18px;
+}
+section.logo p img.logo {
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+section.logo strong {
+	font-size: 27px;
+	color: #0097dd;
+	margin: 30px 0;
+	line-height: 42px;
+	letter-spacing: -1px;
+	padding-top: 0px;
+	display: block;
+}
+section.logo strong img {
+	float: left;
+	margin-right: 12px;
+}
+section.logo p+strong,
+section.logo strong+p {
+	margin-top: 60px;
+	letter-spacing: -1px;
+}
+section.logo strong+p {
+	margin-top: 80px;
+}
+section.outline {
+	padding: 60px 0;
+}
+section.outline ul {
+	flex-wrap: wrap;
+}
+section.outline ul li {
+	width: 50%;
+	position: relative;
+}
+section.outline ul li table {
+	height: 100%;
+	border-collapse: collapse;
+}
+
+section.history {
+	padding: 60px 0;
+}
+section.history h3 {
+	margin: 0;
+}
+section.history h3 span {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	line-height: 42px;
+	color: #0075b6;
+	font-size: 30px;
+	font-weight: normal;
+}
+section.history h3 span:before {
+	content: "ー";
+	margin-left: 0.5em;
+	margin-right: 0.3em;
+}
+section.history h3 span:after {
+	content: "ー";
+	margin-left: 0.3em;
+}
+section.history dl {
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1.6em;
+	margin-top: 40px;
+}
+section.history dt {
+	color: #0097dd;
+	margin: 0;
+	padding: 12px;
+	width: 4em;
+	text-align: center;
+	position: relative;
+}
+section.history dt:after {
+content: "●";
+position: absolute;
+top: -2em;
+right: -0.55em;
+margin-top: 3em;
+transform: scale(0.5);
+/*
+top: 3em;
+right: -0.55em;
+font-size: 6px;
+display: inline-block;
+line-height: 1em;
+vertical-align: middle;
+	font-family: "Noto Sans Japanese", "Roboto", sans-serif;
+	font-family: "Roboto", "Noto Sans Japanese", sans-serif;
+*/
+}
+section.history dt span {
+	line-height: 1.2em;
+}
+section.history dd {
+	border-left: 1px solid #0091da;
+	margin: 0;
+	padding: 12px;
+	width: calc(100% - 4em);
+	position: relative;
+}
+section.history dd:last-child {
+	padding-bottom: 3em;
+}
+section.history dd:last-child:after {
+	content: "　";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #0091da;
+	left: -7px;
+	bottom: 0;
+	transform: rotate(45deg);
+	display: block;
+}
+section.history dd strong {
+	display: block;
+	font-weight: bold;
+	color: #0075c1;
+}
+
+@media screen and (min-width: 981px) {
+	main > div.wrap+p {
+		margin-bottom: 30px;
+	}
+	section.outline .flex li+li table {
+		border-left: none;
+	}
+
+	section.access table th,
+	section.outline table th {
+		width: 9em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.ceo {
+		margin-top: 14px;
+		padding: 8px 0 15px;
+		padding-left: 5px;
+		overflow: hidden;
+	}
+	.ceo .message {
+		padding-top: 22px;
+	}
+	.ceo .president {
+		width: 170px;
+		right: -20px;
+		bottom: -35px;
+		max-width: 50%;
+	}
+	.ceo .sign {
+		margin-left: 0;
+		padding: 30px 5px 0px;
+	}
+
+	main p > img {
+		width: 135px;
+	}
+	
+	section.logo {
+		padding: 25px 0;
+		font-size: 13px;
+	}
+	section.logo h3 img {
+		width: 142px;
+	}
+	section.logo p {
+		line-height: 1.6em;
+		font-size: 13px;
+	}
+	section.logo p img.logo {
+		position: static;
+		display: block;
+		width: 150px;
+		margin: 30px auto 50px;
+	}
+	section.logo strong img {
+		float: none;
+		width: 78px;
+		display: block;
+		margin: 0 auto 5px;
+	}
+	section.logo strong {
+		font-size: 17px;
+		text-align: center;
+		line-height: 1.4em;
+		display: block;
+	}
+	section.logo p+strong,
+	section.logo strong+p {
+		margin-top: 30px;
+		letter-spacing: 1px;
+	}
+	section.logo strong+p {
+		letter-spacing: 0;
+		font-size: 13.3px;
+	}
+	.outline h3 img {
+		width: 100px;
+	}
+	.outline ul li {
+		width: 100%;
+		font-size: 11.5px;
+	}
+	section.outline {
+		padding: 25px 0 30px;
+	}
+	section.outline h3 {
+		margin-top: 0;
+	}
+	section.outline .flex {
+		display: block;
+	}
+	section.outline .flex li {
+		width: 100%;
+	}
+	section.outline .flex li+li table {
+		border-top: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	section.logo strong {
+		font-size: 14.5px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	section.history {
+		padding: 30px 0;
+	}
+	section.history h3 img {
+		width: 100px;
+	}
+	section.history h3 span {
+		font-size: 15px;
+		line-height: 21px;
+		margin-top: 3px;
+	}
+}
+
+
+
+section.access,
+section.outline {
+	background-color: #0075b6;
+	color: white;
+	font-size: 17px;
+	padding: 40px 0;
+}
+section.access table,
+section.outline table {
+	width: 100%;
+	border: 1px solid white;
+}
+section.access table th,
+section.outline table th,
+section.access table th {
+	width: 8.5em;
+/* white-space: nowrap; */
+}
+section.access table th,
+section.outline table th,
+section.access table td,
+section.outline table td {
+	border-bottom: 1px solid #80badb;
+	text-align: left;
+	vertical-align: top;
+	font-weight: 200;
+	padding: 12px;
+	letter-spacing: 1px;
+	line-height: 1.6em;
+}
+section.access table th,
+section.outline table th {
+	font-weight: 400;
+}
+
+section table td dt {
+	margin-top: 1.5em;
+}
+section table td dd {
+	margin-top: 0.3em;
+	margin-left: 0;
+}
+.access a {
+	color: #ffff00;
+}
+.access a:hover {
+	color: #7aaed6;
+}
+section.access h3 {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 980px) {
+	section.access,
+	section.outline {
+		padding: 20px 0;
+	}
+	section.access table,
+	section.outline table {
+		font-size: 12px;
+		line-height: 1.4em;
+	}
+	section.access h3 img {
+		width: 90px;
+	}
+	section table td dl,
+	section table td dt {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	section table td dd+dt {
+		padding-top: 1em;
+	}
+	section table .method th,
+	section table .method td {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	section table .method td iframe {
+		height: 150px;
+	}
+	section.access td iframe+a {
+		color: white;
+		border: 1px solid white;
+		border-radius: 4px;
+		display: inline-block;
+		padding: 2px 3px;
+		font-size: 10px;
+		float: right;
+		margin-top: 0.5em;
+	}
+	section.access table th,
+	section.outline table th,
+	section.access table td,
+	section.outline table td {
+		padding: 8px;
+	}
+}

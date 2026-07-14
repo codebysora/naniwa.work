@@ -1,0 +1,178 @@
+
+section.mv > div.wrap {
+	height: 388px;
+	padding-top: 35px;
+}
+section.mv > .wrap img.man {
+	position: absolute;
+	right: 0; bottom: 0;
+	margin-right: -460px;
+}
+section.mv p.wrap.reform {
+	font-size: 18px;
+	line-height: 1.6em;
+	
+	margin-top: 445px;
+}
+section.mv p.wrap.reform img.txt {
+	margin-top: 80px;
+	margin-bottom: 130px;
+}
+
+ul.housing {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+ul.housing li {
+	width: calc(50% - 25px);
+	margin-bottom: 50px;
+	font-size: 16px;
+}
+ul.housing h3 {
+	font-size: 24px;
+	color: #0075b6;
+	border-bottom: 1px solid #0075b6;
+	float: left;
+	letter-spacing: 2px;
+}
+
+ul.housing h3 span {
+	display: block;
+	font-style: italic;
+	font-size: 14px;
+	color: #0097dd;
+	line-height: 3em;
+	letter-spacing: 1px;
+}
+ul.housing h3,
+ul.housing h3+p {
+	margin: 0;
+	padding-left: 20px;
+	padding-top: 18px;
+	width: calc(100% - 258px);
+	float: left;
+}
+ul.housing h3+p {
+	line-height: 1.4em;
+}
+section h2 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.6em;
+	margin: 0;
+	margin-top: 100px;
+}
+section h2 img {
+	margin-right: 50px;
+	float: left;
+}
+
+@media screen and (max-width: 980px) {
+	main div.wrap h2 {
+		margin-bottom: 0;
+	}
+	main div.wrap h2 > img {
+		width: 135px;
+	}
+	section.wrap {
+		padding: 0 20px;
+	}
+	section.mv {
+		background: none;
+		position: relative;
+	}
+	section.mv p.wrap.reform {
+		font-size: 21px;
+		line-height: 1.6em;
+		width: 70%;
+		position: absolute;
+		left: 0;
+		top: 45%;
+		margin-top: 35px;
+	}
+	ul.housing {
+		margin-top: 32px;
+	}
+	ul.housing li {
+		width: 100%;
+		margin-bottom: 27px;
+		font-size: 12px;
+		position: relative;
+	}
+	ul.housing h3+p {
+		position: absolute;
+		right: 0;
+		top: 44px;
+	}
+	ul.housing li img {
+		width: 153px;
+		max-width: 50%;
+	}
+	ul.housing h3,
+	ul.housing h3+p {
+		margin: 0;
+		padding: 7px 0 0 7px;
+		width: calc(100% - 153px);
+	}
+	ul.housing h3 {
+		padding-top: 0;
+		font-size: 16px;
+	}
+	ul.housing h3 span {
+		line-height: 2.4em;
+		font-size: 10.5px;
+	}
+	section h2 {
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 1.6em;
+		margin: 0;
+		margin-top: 50px;
+	}
+	section h2 img {
+		width: auto;
+		height: 43px !important;
+		float: none;
+	}
+	section h2 img+span {
+		display: block;
+		margin-top: 1em;
+	}
+}
+@media screen and (max-width: 640px) {
+	section.mv p.wrap.reform {
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 480px) {
+	section.mv p.wrap.reform {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 380px) {
+	section.mv p.wrap.reform {
+		font-size: 12px;
+		top: 40%;
+	}
+}
+@media screen and (max-width: 320px) {
+
+	ul.housing h3,
+	ul.housing h3+p {
+		margin: 0;
+		padding: 7px 0 0 7px;
+		width: 50%;
+	}
+	ul.housing h3 {
+		padding-top: 0;
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+	ul.housing h3+p {
+		top: 40px;
+	}
+}

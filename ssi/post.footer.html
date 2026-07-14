@@ -1,0 +1,83 @@
+
+<style>
+body#recruit_newgraduate footer,
+body#recruit_partner footer {
+	padding-bottom: 141px;
+}
+
+body#recruit_newgraduate footer div.gotop,
+body#recruit_partner footer div.gotop {
+	bottom: 160px;
+}
+
+#footer_contact {
+	position: fixed;
+	left: 0; right: 0; bottom: 0;
+	background-color: white;
+	border-top: 5px solid #0097DD;
+	z-index: 10;
+}
+#footer_contact ul {
+	width: 970px;
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	padding: 20px 0;
+}
+#footer_contact ul li {
+	padding: 0;
+}
+#footer_contact ul li.tel {
+	padding-left: 45px;
+}
+#recruit_partner img.newgraduate,
+#recruit_newgraduate img.partner {
+	display: none !important;
+}
+
+@media screen and (max-width: 980px) {
+	#footer_contact ul {
+		width: 100%;
+		display: block;
+		padding: 10px 0;
+	}
+	#footer_contact ul li {
+		text-align: center;
+	}
+	#footer_contact ul li img {
+		width: 45%;
+	}
+	#footer_contact ul li img:last-child {
+		margin-left: 10px;
+	}
+	#footer_contact ul li.tel {
+		padding-left: 0;
+	}
+	#footer_contact ul li.tel img {
+		width: 70%;
+	}
+	#footer_contact ul li img:last-child {
+		margin-left: 0;
+	}
+	
+	body#recruit_newgraduate footer div.gotop,
+	body#recruit_partner footer div.gotop {
+		bottom: 120px;
+	}
+}
+</style>
+
+
+<div id="footer_contact">
+	<ul>
+		<li>
+			<img src="img/common/footer/recruit_contact_text1@2x.png" width="332" class="newgraduate" alt="" />
+			<img src="img/common/footer/recruit_contact_text2@2x.png" width="332" class="partner" alt="" />
+			<img src="img/common/footer/recruit_contact_text3@2x.png" width="332" class="" alt="" />
+		</li>
+		<li class="tel">
+			<a href="tel:080-9809-7834" class="sp"><img src="img/common/footer/recruit_contact_tel@2x.png" alt="通話" width="590" /></a>
+			<img class="pc" src="img/common/footer/recruit_contact_tel@2x.png" width="590" alt="電話番号" />
+		</li>
+	</ul>
+</div>

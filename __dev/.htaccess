@@ -1,0 +1,5 @@
+AuthUserfile /var/www/html/.htpasswd
+AuthGroupfile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
