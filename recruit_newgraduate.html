@@ -15,6 +15,7 @@
 	<!--#include virtual="/ssi/meta.html" -->
 	<!-- ページ固有スタイル -->
 	<link rel="stylesheet" href="css/recruit_newgraduate02.css" />
+	<link rel="stylesheet" href="css/recruit_carousel.css" />
 
 </head>
 
@@ -42,11 +43,10 @@
 		</h2>
 
 		<nav class="tab wrap cf">
-
-
 			<ul class="tab flex">
 				<li><a href="recruit_newgraduate.html" class="nohover"><img src="img/recruit_newgraduate/newgraduate_tab1@2x.png" width="324" alt="新卒採用" /></a></li>
 				<li><a href="recruit_partner.html"><img src="img/recruit_newgraduate/newgraduate_tab2@2x.png" width="324" alt="職方募集" /></a></li>
+				<li><a href="recruit_midcareer.html"><img src="img/recruit_midcareer/midcareer_tab_inactive@2x.png" width="324" alt="中途採用" /></a></li>
 			</ul>
 		</nav>
 
@@ -110,46 +110,22 @@
 		<section class="events wrap">
 			<h3 align="center"><img src="img/recruit_newgraduate/newgraduate_title2@3x.png" width="818" alt="社員のプライベート写真" /></h3>
 
-<ul class="flex">
-				<li>
-									<p><img src="img/recruit_newgraduate/newgraduate_event1@3x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-				<li>
-					<p><img src="img/recruit_newgraduate/newgraduate_event1@4x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-			</ul>
-<ul class="flex">
-				<li>
-									<p><img src="img/recruit_newgraduate/newgraduate_event1@5x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-				<li>
-					<p><img src="img/recruit_newgraduate/newgraduate_event1@6x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-			</ul> 
- <ul class="flex">
-				<li>
-									<p><img src="img/recruit_newgraduate/newgraduate_event1@7x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-				<li>
-					<p><img src="img/recruit_newgraduate/newgraduate_event1@8x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-			</ul>  
-<ul class="flex">
-				<li>
-									<p><img src="img/recruit_newgraduate/newgraduate_event1@9x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>
-				</li>
-				<li>
-					<!--<p><img src="img/recruit_newgraduate/newgraduate_event1@10x.jpg" width="100%" alt="社員のプライベート写真" />
-					</p>-->
-				</li>
-			</ul>                         
+			<div class="recruit-carousel" data-carousel>
+				<button type="button" class="recruit-carousel__btn recruit-carousel__btn--prev" aria-label="前へ">‹</button>
+				<button type="button" class="recruit-carousel__btn recruit-carousel__btn--next" aria-label="次へ">›</button>
+				<div class="recruit-carousel__viewport">
+					<ul class="recruit-carousel__track">
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@3x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@4x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@5x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@6x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@7x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@8x.jpg" alt="社員のプライベート写真" /></li>
+						<li class="recruit-carousel__slide"><img src="img/recruit_newgraduate/newgraduate_event1@9x.jpg" alt="社員のプライベート写真" /></li>
+					</ul>
+				</div>
+				<div class="recruit-carousel__dots" aria-label="スライド位置"></div>
+			</div>
 		</section>
 
 
@@ -289,6 +265,7 @@
 
 </div>
 
+<script src="js/recruit_carousel.js"></script>
 <!--#include virtual="/ssi/post.content.html" -->
 
 </body>

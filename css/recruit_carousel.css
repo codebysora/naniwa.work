@@ -1,0 +1,107 @@
+/* 社員プライベート写真カルーセル */
+
+.recruit-carousel {
+	position: relative;
+	max-width: 1000px;
+	margin: 40px auto 0;
+	overflow: hidden;
+}
+
+.recruit-carousel__viewport {
+	overflow: hidden;
+	width: 100%;
+	touch-action: pan-y;
+}
+
+.recruit-carousel__track {
+	display: flex;
+	transition: transform 0.45s ease;
+	will-change: transform;
+}
+
+.recruit-carousel__slide {
+	flex: 0 0 50%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	list-style: none;
+	margin: 0;
+}
+
+.recruit-carousel__slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.recruit-carousel__btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	border: none;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 1;
+	color: #333;
+	padding: 0;
+}
+
+.recruit-carousel__btn:hover {
+	background: #fff;
+}
+
+.recruit-carousel__btn--prev {
+	left: 8px;
+}
+
+.recruit-carousel__btn--next {
+	right: 8px;
+}
+
+.recruit-carousel__dots {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin: 18px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.recruit-carousel__dots button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: none;
+	padding: 0;
+	background: #c5ced6;
+	cursor: pointer;
+}
+
+.recruit-carousel__dots button.is-active {
+	background: #0095db;
+}
+
+body#recruit_midcareer .recruit-carousel__dots button.is-active {
+	background: #00897b;
+}
+
+@media screen and (max-width: 980px) {
+	.recruit-carousel {
+		margin-top: 20px;
+		padding: 0 8px;
+	}
+	.recruit-carousel__slide {
+		flex: 0 0 100%;
+		padding: 0 4px;
+	}
+	.recruit-carousel__btn {
+		width: 36px;
+		height: 36px;
+		font-size: 18px;
+	}
+}

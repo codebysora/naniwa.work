@@ -1,5 +1,4 @@
-
-
+/* 中途採用ページ — 新卒ページ構成を踏襲、メインカラーは teal (#00897b) */
 
 nav.tab {
 	margin-top: 60px;
@@ -10,17 +9,9 @@ nav.tab ul.flex {
 	margin: 0;
 	line-height: 0;
 }
-nav.tab ul.mynavi {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-nav.tab ul.mynavi li:first-child {
-	margin-right: 22px;
-}
 nav.tab ul.tab li {
 	position: relative;
-	z-index: 10;
+	z-index: 1;
 }
 nav.tab ul.tab li:nth-child(2) {
 	left: -13px;
@@ -28,7 +19,7 @@ nav.tab ul.tab li:nth-child(2) {
 }
 nav.tab ul.tab li:nth-child(3) {
 	left: -26px;
-	z-index: 1;
+	z-index: 10;
 }
 
 @media screen and (max-width: 980px) {
@@ -45,15 +36,9 @@ nav.tab ul.tab li:nth-child(3) {
 	nav.tab ul.tab li {
 		margin-left: 6px;
 	}
-	nav.tab ul.mynavi {
-		position: static;
-		margin: 0 auto 25px; 
-		width: 370px;
-		justify-content: space-between;
-	}
 	nav.tab ul.tab {
 		text-align: center;
-		justify-content: center
+		justify-content: center;
 	}
 	nav.tab ul.tab li img {
 		width: 30vw;
@@ -65,7 +50,7 @@ nav.tab ul.tab li:nth-child(3) {
 		padding-right: 25px;
 	}
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
 	main section > .wrap {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -76,97 +61,113 @@ nav.tab ul.tab li:nth-child(3) {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	nav.tab ul.mynavi {
-		max-width: 280px;
-	}
 }
-
 
 section.copy {
 	line-height: 0;
+	background-color: #00897b;
 }
 section.copy .pc {
 	padding: 76px 0 150px;
 }
 
+.midcareer-heading {
+	text-align: center;
+	margin: 50px auto 10px;
+	padding: 0 20px;
+}
+.midcareer-heading__label {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	color: #00897b;
+	border-bottom: 2px solid #00897b;
+	padding-bottom: 6px;
+	margin-bottom: 14px;
+}
+.midcareer-heading__title {
+	margin: 0;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #1a2b2f;
+	letter-spacing: 0.04em;
+}
+@media screen and (max-width: 980px) {
+	.midcareer-heading {
+		margin-top: 30px;
+	}
+	.midcareer-heading__title {
+		font-size: 20px;
+	}
+}
 
 section.challenge {
 	background: url("../img/recruit_newgraduate/newgraduate_bg.PC@5x.jpg") center top no-repeat;
-	background-repeat:no-repeat;
 	background-size: cover;
-/*
-	background-size: 1850px 864px;
-	background-position: 50% 50%;
-	background-attachment:fixed;
-*/
 }
 section.challenge > div {
-	height: 912px;
+	min-height: 912px;
+	height: auto;
 	font-size: 20px;
 	line-height: 1.8em;
 	padding: 85px 0 110px;
+	box-sizing: border-box;
 }
 section.challenge > div > p {
-	margin-top: 0em;
+	margin-top: 0;
 	font-weight: 500;
+	color: #1a2b2f;
 }
-section.challenge > div img {
+section.challenge > div .catch {
 	float: left;
 	margin-right: 70px;
+	width: 220px;
 }
-section.challenge > div img.pc {
-	position: relative;
-	top: 6px;
+section.challenge > div .catch .midcareer-side-title {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.45;
+	color: #00897b;
+	border-left: 5px solid #00897b;
+	padding-left: 16px;
+	margin: 0;
 }
 
 @media screen and (max-width: 980px) {
 	section.challenge {
 		background: url("../img/recruit_newgraduate/newgraduate_bg_SP05.jpg") center bottom no-repeat;
-		background-repeat:no-repeat;
 		background-size: cover;
-/* 		background-size: 750px 1224px; */
 	}
 	section.challenge > div {
 		padding-top: 30px;
-		height: 2400px;
+		min-height: 0;
+		height: auto;
+		padding-bottom: 80px;
 	}
-	section.challenge > div img {
+	section.challenge > div .catch {
 		float: none;
 		display: block;
+		width: auto;
+		margin: 0 auto 20px;
 		text-align: center;
-		padding: 0 70px 15px;
-		margin: 0 auto;
 	}
-		section.challenge li h4 {
-	font-weight: bold;
-	margin: 0;
-	color: #0095db;
-	font-size: 27px;
-}
+	section.challenge > div .catch .midcareer-side-title {
+		display: inline-block;
+		text-align: left;
+		font-size: 18px;
+		border-left-width: 4px;
+		padding-left: 12px;
+	}
 	section.challenge > div p {
 		text-align: center;
-		font-size: 12.71px;
+		font-size: 13px;
 		line-height: 1.8em;
-		margin-top: 30px;
+		margin-top: 20px;
 		font-weight: 400;
 	}
-	
-
-
 }
-@media screen and (max-width:750px) {
-	section.challenge {
-		background-size: cover;
-	}
-	section.challenge > div {
-		height: auto;
-		padding-bottom: 60%;
-	}
-}
-
-
-
-
 
 ul.flex.entries {
 	width: 525px;
@@ -177,17 +178,11 @@ ul.flex.entries li {
 	width: 195px;
 	text-align: center;
 }
-ul.flex.entries li img+a {
-	display: inline-block;
-	background: white;
-	margin-top: 10px;
-}
 ul.flex.entries li img {
 	display: block;
 	width: 100%;
 	margin: 0;
 }
-
 @media screen and (max-width: 980px) {
 	ul.flex.entries {
 		max-width: 520px;
@@ -205,29 +200,30 @@ ul.flex.entries li img {
 	}
 }
 
-
 section.ideal {
 	background: url('../img/recruit_newgraduate/repeat_bg1.gif');
 	padding: 30px 0 45px;
 	background-size: 20px 20px;
 }
-section.ideal ul.flex.entries {
-	margin-top: 40px;
-}
 section.ideal > .wrap {
 	max-width: 1092px;
+}
+section.ideal .ideal-title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: #00897b;
+	margin: 10px 0 25px;
+	letter-spacing: 0.08em;
 }
 @media screen and (max-width: 980px) {
 	section.ideal {
 		padding-top: 25px;
 		background-size: 10px 10px;
 	}
-	section.ideal h3 {
-		margin: 0;
-		padding: 0 55px 15px;
-	}
-	section.ideal ul.flex.entries {
-		margin-top: 10px;
+	section.ideal .ideal-title {
+		font-size: 18px;
+		margin-bottom: 15px;
 	}
 	section.ideal > .wrap {
 		padding-left: 10px;
@@ -235,71 +231,53 @@ section.ideal > .wrap {
 	}
 }
 
-
 section.events {
 	margin: 65px auto;
 }
-section.events .flex {
-	margin: 80px 0;
-	font-size: 17px;
+section.events .events-title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: #1a2b2f;
+	margin: 0 0 10px;
+	letter-spacing: 0.06em;
 }
-section.events .flex li {
-	width: 477px;
-	line-height: 1.4em;
-	font-weight: 300;
-}
-section.events .flex li h4 {
-	font-weight: bold;
-	margin: 0;
-	color: #0095db;
-	font-size: 27px;
-}
-section.events .flex li p > img {
-	margin-bottom: 0.5em;
+section.events .events-title span {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	color: #00897b;
+	letter-spacing: 0.16em;
+	margin-bottom: 8px;
 }
 @media screen and (max-width: 980px) {
 	section.events {
 		margin: 30px auto;
 	}
-	section.events h3 {
+	section.events .events-title {
+		font-size: 18px;
 		padding: 0 25px;
-		margin-bottom: 0;
-	}
-	section.events .flex {
-		flex-wrap: wrap;
-		margin: 0;
-	}
-	section.events .flex li {
-		width: 100%;
-		padding: 0 44px;
-	}
-	section.events .flex li h4 {
-		text-align: center;
-		font-size: 15.04px;
-		margin-top: 30px;
-	}
-	section.events .flex li p {
-		font-size: 12px;
-		line-height: 1.4em;
-		margin: 0;
-	}
-	section.events .flex li p > img {
-		margin: 0;
 	}
 }
 
-
 section.interview {
-	background-color: #0095db;
+	background-color: #00897b;
 }
 section.interview > h3 {
 	padding: 50px 0 25px;
-	border-bottom: 1px solid #80caed;
+	border-bottom: 1px solid #4db6ac;
 }
 section.interview > h3 div {
 	max-width: 1080px;
 	margin: 0 auto;
 	position: relative;
+}
+section.interview .interview-title {
+	margin: 0;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
 }
 section.interview dl {
 	color: white;
@@ -328,17 +306,12 @@ section.interview dl dd {
 	padding: 0;
 	line-height: 1.6em;
 }
-
 @media screen and (max-width: 980px) {
 	section.interview > h3 {
 		padding: 25px 15px;
-		position: relative;
 	}
-	section.interview > h3 div img {
-		width: 80%;
-	}
-	section.interview > h3 > img {
-		width: 40%;
+	section.interview .interview-title {
+		font-size: 22px;
 	}
 	section.interview dl dt {
 		margin: 15px 0 10px;
@@ -354,36 +327,34 @@ section.interview dl dd {
 		font-size: 12px;
 	}
 }
-@media screen and (max-width: 340px) {
-	section.interview dl dt {
-		font-size: 16px;
-	}
-	section.interview dl dt:before {
-		margin-right: 5px;
-	}
-}
-
-
 
 section.requirements h3 {
 	margin: 60px auto 40px;
 }
+section.requirements .req-title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: #00897b;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
 section.requirements table {
 	width: 790px;
 	margin: auto;
-	border: 1px solid #1b84d5;
+	border: 1px solid #00796b;
 	border-top: none;
 	font-size: 16px;
 }
 section.requirements table th,
 section.requirements table td {
-	border-top: 1px solid #1b84d5;
+	border-top: 1px solid #00796b;
 	margin: 0;
 	line-height: 1.4em;
 }
 section.requirements table th {
 	width: 175px;
-	color: #0095db;
+	color: #00897b;
 	padding: 15px 30px;
 	text-align: left;
 }
@@ -400,27 +371,28 @@ section.requirements table td strong {
 section.requirements table td small {
 	font-size: 14px;
 }
-section.requirements table td span {
+section.requirements table td span.note {
 	color: #d8003c;
 }
 section.requirements table td p {
 	margin: 0;
 }
-section.requirements table td p+p {
+section.requirements table td p + p {
 	margin-top: 1em;
-}
-
-section.requirements ul.flex.entries {
-	margin: 55px auto 100px;
 }
 section.requirements iframe {
 	margin: 15px auto 70px;
 	max-width: 100%;
 }
-
+.pending-copy {
+	color: #666;
+}
 @media screen and (max-width: 980px) {
 	section.requirements h3 {
 		margin: 30px auto 20px;
+	}
+	section.requirements .req-title {
+		font-size: 18px;
 	}
 	section.requirements table {
 		width: 100%;
@@ -441,32 +413,26 @@ section.requirements iframe {
 		padding-top: 0;
 		font-size: 12px;
 	}
-	section.requirements table td strong {
-		text-indent: -0.5em;
-	}
-	section.requirements table td small {
-		font-size: 10px;
-		display: block;
-		margin-top: 0.5em;
-	}
 }
-@media screen and (max-width: 480px) {
-	section.requirements h3 img {
-		width: 111px;
-	}
-}
-
 
 section.flow {
-	background: #0095db url('../img/recruit_newgraduate/repeat_bg2.gif');
+	background: #00897b url('../img/recruit_newgraduate/repeat_bg2.gif');
 	padding: 50px 0 45px;
 	background-size: 20px 20px;
 }
 section.flow h3 {
 	margin: 0 auto;
 }
+section.flow .flow-title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
 section.flow > div {
-	padding-top: 70px
+	padding-top: 70px;
 }
 @media screen and (max-width: 980px) {
 	section.flow {
@@ -474,64 +440,39 @@ section.flow > div {
 		background-size: 10px 10px;
 	}
 	section.flow > div {
-		padding-top: 22px
+		padding-top: 22px;
 	}
-	section.flow h3 img {
-		width: 134px;
-		height: auto;
+	section.flow .flow-title {
+		font-size: 18px;
 	}
 }
-
 
 section.catch {
 	padding: 80px 0;
 }
-section.catch > div {
-	padding-bottom: 80px;
+section.catch .catch-message {
+	max-width: 786px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.9;
+	font-weight: 600;
+	color: #1a2b2f;
 }
-
+section.catch .catch-message strong {
+	display: block;
+	color: #00897b;
+	font-size: 26px;
+	margin-bottom: 12px;
+}
 @media screen and (max-width: 980px) {
-section.catch {
-	padding: 40px 0 0;
-}
-	section.catch > div {
-		padding-bottom: 40px;
+	section.catch {
+		padding: 40px 20px 40px;
 	}
-}
-@media screen and (max-width: 980px) {
-	section.form1 h3 {
-		font-size: 13px;
-		text-align: left;
-		padding-left: 2em;
-		line-height: 2em;
+	section.catch .catch-message {
+		font-size: 14px;
 	}
-	section.form1 div.wrap div img {
-		right: 0;
-	}
-	section.form1 div.wrap > ul {
-		width: auto;
-		min-width: 200px;
-		max-width: 50%;
-		padding: 20px 0 10px;
-	}
-	section.form1 div.wrap > ul li {
-		padding-bottom: 10px;
-		display: block;
-	}
-	section.form1 div.wrap a.btn-form,
-	section.form2 div.wrap a.btn-form {
-		font-size: 12.5px;
-		display: block;
-	}
-	section.form1 div.wrap a.btn-form {
-		width: 100%;
-		text-align: center;
-	}
-	section.form1 div.wrap > div {
-		left: 65%;
-		max-width: 288px;
-	}
-	section.form2 div.wrap a.btn-form {
-		padding: 10px 0;
+	section.catch .catch-message strong {
+		font-size: 16px;
 	}
 }
