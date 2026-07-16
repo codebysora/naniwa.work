@@ -1,483 +1,470 @@
-
-
-
 nav.tab {
-	margin-top: 60px;
-	position: relative;
+  margin-top: 60px;
+  position: relative;
 }
 nav.tab ul.flex {
-	justify-content: flex-start;
-	margin: 0;
-	line-height: 0;
+  justify-content: flex-start;
+  margin: 0;
+  line-height: 0;
 }
 nav.tab ul.mynavi {
-	position: absolute;
-	right: 0;
-	top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 nav.tab ul.mynavi li:first-child {
-	margin-right: 22px;
+  margin-right: 22px;
 }
 nav.tab ul.tab li {
-	position: relative;
-	z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 nav.tab ul.tab li:last-child {
-	position: relative;
-	left: -13px;
-	z-index: 1;
+  position: relative;
+  left: -13px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 980px) {
-	main > h2 > img {
-		width: auto;
-		height: 35px !important;
-	}
-	nav.tab {
-		margin-top: 25px;
-	}
-	nav.tab ul.flex {
-		margin: auto;
-	}
-	nav.tab ul.tab li {
-		margin-left: 6px;
-	}
-	nav.tab ul.mynavi {
-		position: static;
-		margin: 0 auto 25px; 
-		width: 370px;
-		justify-content: space-between;
-	}
-	nav.tab ul.tab {
-		text-align: center;
-		justify-content: center
-	}
-	main section > .wrap {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
+  main > h2 > img {
+    width: auto;
+    height: 35px !important;
+  }
+  nav.tab {
+    margin-top: 25px;
+  }
+  nav.tab ul.flex {
+    margin: auto;
+  }
+  nav.tab ul.tab li {
+    margin-left: 6px;
+  }
+  nav.tab ul.mynavi {
+    position: static;
+    margin: 0 auto 25px;
+    width: 370px;
+    justify-content: space-between;
+  }
+  nav.tab ul.tab {
+    text-align: center;
+    justify-content: center;
+  }
+  main section > .wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
-@media screen and (max-width:750px) {
-	main section > .wrap {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+@media screen and (max-width: 750px) {
+  main section > .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media screen and (max-width: 400px) {
-	main section > .wrap {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	nav.tab ul.mynavi {
-		max-width: 280px;
-	}
+  main section > .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  nav.tab ul.mynavi {
+    max-width: 280px;
+  }
 }
-
 
 section.copy {
-	line-height: 0;
+  line-height: 0;
 }
 section.copy .pc {
-	padding: 76px 0 150px;
+  padding: 76px 0 150px;
 }
 
-
 section.challenge {
-	background: url("../img/recruit_newgraduate/newgraduate_bg.PC@2x.jpg") center top no-repeat;
-	background-repeat:no-repeat;
-	background-size: cover;
-/*
+  background: url("../img/recruit_newgraduate/newgraduate_bg.PC@2x.jpg") center
+    top no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*
 	background-size: 1850px 864px;
 	background-position: 50% 50%;
 	background-attachment:fixed;
 */
 }
 section.challenge > div {
-	height: 864px;
-	font-size: 22.1px;
-	line-height: 1.8em;
-	padding: 85px 0 110px;
+  height: 864px;
+  font-size: 22.1px;
+  line-height: 1.8em;
+  padding: 85px 0 110px;
 }
 section.challenge > div > p {
-	margin-top: 0em;
-	font-weight: 500;
+  margin-top: 0em;
+  font-weight: 500;
 }
 section.challenge > div img {
-	float: left;
-	margin-right: 70px;
+  float: left;
+  margin-right: 70px;
 }
 section.challenge > div img.pc {
-	position: relative;
-	top: 6px;
+  position: relative;
+  top: 6px;
 }
 
 @media screen and (max-width: 980px) {
-	section.challenge {
-		background: url("../img/recruit_newgraduate/newgraduate_bg.SP.jpg") center bottom no-repeat;
-		background-repeat:no-repeat;
-		background-size: cover;
-/* 		background-size: 750px 1224px; */
-	}
-	section.challenge > div {
-		padding-top: 30px;
-		height: 900px;
-	}
-	section.challenge > div img {
-		float: none;
-		display: block;
-		text-align: center;
-		padding: 0 70px 15px;
-		margin: 0 auto;
-	}
-	section.challenge > div p {
-		text-align: center;
-		font-size: 12.71px;
-		line-height: 1.8em;
-		margin-top: 30px;
-		font-weight: 400;
-	}
+  section.challenge {
+    background: url("../img/recruit_newgraduate/newgraduate_bg.SP.jpg") center
+      bottom no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 		background-size: 750px 1224px; */
+  }
+  section.challenge > div {
+    padding-top: 30px;
+    height: 900px;
+  }
+  section.challenge > div img {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 0 70px 15px;
+    margin: 0 auto;
+  }
+  section.challenge > div p {
+    text-align: center;
+    font-size: 12.71px;
+    line-height: 1.8em;
+    margin-top: 30px;
+    font-weight: 400;
+  }
 }
-@media screen and (max-width:750px) {
-	section.challenge {
-		background-size: cover;
-	}
-	section.challenge > div {
-		height: auto;
-		padding-bottom: 60%;
-	}
+@media screen and (max-width: 750px) {
+  section.challenge {
+    background-size: cover;
+  }
+  section.challenge > div {
+    height: auto;
+    padding-bottom: 60%;
+  }
 }
-
-
-
-
 
 ul.flex.entries {
-	width: 525px;
-	margin: 0 auto;
-	line-height: 0;
+  width: 525px;
+  margin: 0 auto;
+  line-height: 0;
 }
 ul.flex.entries li {
-	width: 195px;
-	text-align: center;
+  width: 195px;
+  text-align: center;
 }
-ul.flex.entries li img+a {
-	display: inline-block;
-	background: white;
-	margin-top: 10px;
+ul.flex.entries li img + a {
+  display: inline-block;
+  background: white;
+  margin-top: 10px;
 }
 ul.flex.entries li img {
-	display: block;
-	width: 100%;
-	margin: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
 }
 
 @media screen and (max-width: 980px) {
-	ul.flex.entries {
-		max-width: 520px;
-		width: auto;
-		margin: 0 auto;
-		justify-content: space-between;
-	}
-	ul.flex.entries li {
-		width: 140px;
-	}
+  ul.flex.entries {
+    max-width: 520px;
+    width: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  ul.flex.entries li {
+    width: 140px;
+  }
 }
 @media screen and (max-width: 640px) {
-	ul.flex.entries {
-		max-width: 300px;
-	}
+  ul.flex.entries {
+    max-width: 300px;
+  }
 }
-
 
 section.ideal {
-	background: url('../img/recruit_newgraduate/repeat_bg1.gif');
-	padding: 30px 0 45px;
-	background-size: 20px 20px;
+  background: url("../img/recruit_newgraduate/repeat_bg1.gif");
+  padding: 30px 0 45px;
+  background-size: 20px 20px;
 }
 section.ideal ul.flex.entries {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 section.ideal > .wrap {
-	max-width: 1092px;
+  max-width: 1092px;
 }
 @media screen and (max-width: 980px) {
-	section.ideal {
-		padding-top: 25px;
-		background-size: 10px 10px;
-	}
-	section.ideal h3 {
-		margin: 0;
-		padding: 0 55px 15px;
-	}
-	section.ideal ul.flex.entries {
-		margin-top: 10px;
-	}
-	section.ideal > .wrap {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
+  section.ideal {
+    padding-top: 25px;
+    background-size: 10px 10px;
+  }
+  section.ideal h3 {
+    margin: 0;
+    padding: 0 55px 15px;
+  }
+  section.ideal ul.flex.entries {
+    margin-top: 10px;
+  }
+  section.ideal > .wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
-
 
 section.events {
-	margin: 65px auto;
+  margin: 65px auto;
 }
 section.events .flex {
-	margin: 80px 0;
-	font-size: 17px;
+  margin: 80px 0;
+  font-size: 17px;
 }
 section.events .flex li {
-	width: 477px;
-	line-height: 1.4em;
-	font-weight: 300;
+  width: 477px;
+  line-height: 1.4em;
+  font-weight: 300;
 }
 section.events .flex li h4 {
-	font-weight: bold;
-	margin: 0;
-	color: #0095db;
-	font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+  color: #0095db;
+  font-size: 27px;
 }
 section.events .flex li p > img {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 @media screen and (max-width: 980px) {
-	section.events {
-		margin: 30px auto;
-	}
-	section.events h3 {
-		padding: 0 25px;
-		margin-bottom: 0;
-	}
-	section.events .flex {
-		flex-wrap: wrap;
-		margin: 0;
-	}
-	section.events .flex li {
-		width: 100%;
-		padding: 0 44px;
-	}
-	section.events .flex li h4 {
-		text-align: center;
-		font-size: 15.04px;
-		margin-top: 30px;
-	}
-	section.events .flex li p {
-		font-size: 12px;
-		line-height: 1.4em;
-		margin: 0;
-	}
-	section.events .flex li p > img {
-		margin: 0;
-	}
+  section.events {
+    margin: 30px auto;
+  }
+  section.events h3 {
+    padding: 0 25px;
+    margin-bottom: 0;
+  }
+  section.events .flex {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  section.events .flex li {
+    width: 100%;
+    padding: 0 44px;
+  }
+  section.events .flex li h4 {
+    text-align: center;
+    font-size: 15.04px;
+    margin-top: 30px;
+  }
+  section.events .flex li p {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin: 0;
+  }
+  section.events .flex li p > img {
+    margin: 0;
+  }
 }
-
 
 section.interview {
-	background-color: #0095db;
+  background-color: #0095db;
 }
 section.interview > h3 {
-	padding: 50px 0 25px;
-	border-bottom: 1px solid #80caed;
+  padding: 50px 0 25px;
+  border-bottom: 1px solid #80caed;
 }
 section.interview > h3 div {
-	max-width: 1080px;
-	margin: 0 auto;
-	position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
 }
 section.interview dl {
-	color: white;
-	max-width: 730px;
-	padding-bottom: 40px;
+  color: white;
+  max-width: 730px;
+  padding-bottom: 40px;
 }
 section.interview dl dt {
-	font-size: 36.52px;
-	font-weight: bold;
-	margin: 50px 0 20px;
+  font-size: 36.52px;
+  font-weight: bold;
+  margin: 50px 0 20px;
 }
 section.interview dl dt:before {
-	content: " ";
-	background: url('../img/recruit_newgraduate/newgraduate_question@2x.png') no-repeat;
-	background-size: contain;
-	width: 53px;
-	height: 74px;
-	float: left;
-	display: inline-block;
-	margin-right: 20px;
-	margin-top: 5px;
+  content: " ";
+  background: url("../img/recruit_newgraduate/newgraduate_question@2x.png")
+    no-repeat;
+  background-size: contain;
+  width: 53px;
+  height: 74px;
+  float: left;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 section.interview dl dd {
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-	line-height: 1.6em;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
 }
 
 @media screen and (max-width: 980px) {
-	section.interview > h3 {
-		padding: 25px 15px;
-		position: relative;
-	}
-	section.interview > h3 div img {
-		width: 80%;
-	}
-	section.interview > h3 > img {
-		width: 40%;
-	}
-	section.interview dl dt {
-		margin: 15px 0 10px;
-		font-size: 18.26px;
-		line-height: 1.2em;
-	}
-	section.interview dl dt:before {
-		width: 23px;
-		height: 35px;
-		margin-right: 10px;
-	}
-	section.interview dl dd {
-		font-size: 12px;
-	}
+  section.interview > h3 {
+    padding: 25px 15px;
+    position: relative;
+  }
+  section.interview > h3 div img {
+    width: 80%;
+  }
+  section.interview > h3 > img {
+    width: 40%;
+  }
+  section.interview dl dt {
+    margin: 15px 0 10px;
+    font-size: 18.26px;
+    line-height: 1.2em;
+  }
+  section.interview dl dt:before {
+    width: 23px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  section.interview dl dd {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 340px) {
-	section.interview dl dt {
-		font-size: 16px;
-	}
-	section.interview dl dt:before {
-		margin-right: 5px;
-	}
+  section.interview dl dt {
+    font-size: 16px;
+  }
+  section.interview dl dt:before {
+    margin-right: 5px;
+  }
 }
-
-
 
 section.requirements h3 {
-	margin: 60px auto 40px;
+  margin: 60px auto 40px;
 }
 section.requirements table {
-	width: 790px;
-	margin: auto;
-	border: 1px solid #1b84d5;
-	border-top: none;
-	font-size: 16px;
+  width: 790px;
+  margin: auto;
+  border: 1px solid #1b84d5;
+  border-top: none;
+  font-size: 16px;
 }
 section.requirements table th,
 section.requirements table td {
-	border-top: 1px solid #1b84d5;
-	margin: 0;
-	line-height: 1.4em;
+  border-top: 1px solid #1b84d5;
+  margin: 0;
+  line-height: 1.4em;
 }
 section.requirements table th {
-	width: 175px;
-	color: #0095db;
-	padding: 15px 30px;
-	text-align: left;
+  width: 175px;
+  color: #0095db;
+  padding: 15px 30px;
+  text-align: left;
 }
 section.requirements table td {
-	width: calc(100% - 175px);
-	font-weight: 280;
-	padding: 15px 10px;
-	letter-spacing: 1px;
+  width: calc(100% - 175px);
+  font-weight: 280;
+  padding: 15px 10px;
+  letter-spacing: 1px;
 }
 section.requirements table td strong {
-	font-weight: 600;
-	display: block;
+  font-weight: 600;
+  display: block;
 }
 section.requirements table td small {
-	font-size: 14px;
+  font-size: 14px;
 }
 section.requirements table td span {
-	color: #d8003c;
+  color: #d8003c;
 }
 section.requirements table td p {
-	margin: 0;
+  margin: 0;
 }
-section.requirements table td p+p {
-	margin-top: 1em;
+section.requirements table td p + p {
+  margin-top: 1em;
 }
 
 section.requirements ul.flex.entries {
-	margin: 55px auto 100px;
+  margin: 55px auto 100px;
 }
 section.requirements iframe {
-	margin: 15px auto 70px;
-	max-width: 100%;
+  margin: 15px auto 70px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 980px) {
-	section.requirements h3 {
-		margin: 30px auto 20px;
-	}
-	section.requirements table {
-		width: 100%;
-	}
-	section.requirements table th,
-	section.requirements table td {
-		width: 100%;
-		display: block;
-		text-align: left;
-		padding: 1em;
-	}
-	section.requirements table th {
-		padding-bottom: 0.5em;
-		font-size: 13px;
-	}
-	section.requirements table td {
-		border-top: none;
-		padding-top: 0;
-		font-size: 12px;
-	}
-	section.requirements table td strong {
-		text-indent: -0.5em;
-	}
-	section.requirements table td small {
-		font-size: 10px;
-		display: block;
-		margin-top: 0.5em;
-	}
+  section.requirements h3 {
+    margin: 30px auto 20px;
+  }
+  section.requirements table {
+    width: 100%;
+  }
+  section.requirements table th,
+  section.requirements table td {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 1em;
+  }
+  section.requirements table th {
+    padding-bottom: 0.5em;
+    font-size: 13px;
+  }
+  section.requirements table td {
+    border-top: none;
+    padding-top: 0;
+    font-size: 12px;
+  }
+  section.requirements table td strong {
+    text-indent: -0.5em;
+  }
+  section.requirements table td small {
+    font-size: 10px;
+    display: block;
+    margin-top: 0.5em;
+  }
 }
 @media screen and (max-width: 480px) {
-	section.requirements h3 img {
-		width: 111px;
-	}
+  section.requirements h3 img {
+    width: 111px;
+  }
 }
-
 
 section.flow {
-	background: #0095db url('../img/recruit_newgraduate/repeat_bg2.gif');
-	padding: 50px 0 45px;
-	background-size: 20px 20px;
+  background: #0095db url("../img/recruit_newgraduate/repeat_bg2.gif");
+  padding: 50px 0 45px;
+  background-size: 20px 20px;
 }
 section.flow h3 {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 section.flow > div {
-	padding-top: 70px
+  padding-top: 70px;
 }
 @media screen and (max-width: 980px) {
-	section.flow {
-		padding: 20px 0;
-		background-size: 10px 10px;
-	}
-	section.flow > div {
-		padding-top: 22px
-	}
-	section.flow h3 img {
-		width: 134px;
-		height: auto;
-	}
+  section.flow {
+    padding: 20px 0;
+    background-size: 10px 10px;
+  }
+  section.flow > div {
+    padding-top: 22px;
+  }
+  section.flow h3 img {
+    width: 134px;
+    height: auto;
+  }
 }
 
-
 section.catch {
-	padding: 80px 0;
+  padding: 80px 0;
 }
 section.catch > div {
-	padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 @media screen and (max-width: 980px) {
-section.catch {
-	padding: 40px 0 0;
-}
-	section.catch > div {
-		padding-bottom: 40px;
-	}
+  section.catch {
+    padding: 40px 0 0;
+  }
+  section.catch > div {
+    padding-bottom: 40px;
+  }
 }

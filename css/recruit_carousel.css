@@ -90,6 +90,14 @@ body#recruit_midcareer .recruit-carousel__dots button.is-active {
 	background: #00897b;
 }
 
+/* 中途：縦横比が違う写真を揃えて見せる */
+body#recruit_midcareer .recruit-carousel__slide img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	object-position: center;
+}
+
 @media screen and (max-width: 980px) {
 	.recruit-carousel {
 		margin-top: 20px;
@@ -103,5 +111,14 @@ body#recruit_midcareer .recruit-carousel__dots button.is-active {
 		width: 36px;
 		height: 36px;
 		font-size: 18px;
+	}
+	body#recruit_midcareer .recruit-carousel__slide img {
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body#recruit_midcareer .recruit-carousel__slide img {
+		height: 200px;
 	}
 }
