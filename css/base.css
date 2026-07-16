@@ -165,8 +165,21 @@ section.recruit .wrap h3 {
 	margin: 35px 0 40px;
 }
 section.recruit .wrap ul.flex {
-	max-width: 862px;
+	max-width: 1000px;
 	margin: 0 auto;
+	gap: 12px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+section.recruit .wrap ul.flex li {
+	flex: 1 1 280px;
+	max-width: 411px;
+	text-align: center;
+}
+section.recruit .wrap ul.flex li img {
+	width: 100%;
+	height: auto;
+	max-width: 411px;
 }
 
 @media screen and (max-width: 980px) {
@@ -234,7 +247,12 @@ section.recruit .wrap ul.flex {
 		display: block;
 	}
 	section.recruit .wrap ul.flex li {
-		margin: 0 60px 20px;;
+		flex: none;
+		max-width: none;
+		margin: 0 40px 20px;
+	}
+	section.recruit .wrap ul.flex li img {
+		max-width: 100%;
 	}
 }
 

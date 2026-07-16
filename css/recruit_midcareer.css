@@ -71,26 +71,19 @@ section.copy .pc {
   padding: 76px 0 150px;
 }
 
-/* メッセージ見出し（新卒の message 画像と同じ位置・役割） */
-h3.midcareer-message {
-  margin: 60px auto 20px;
-  padding: 0;
-  max-width: 720px;
-  font-size: 38px;
-  font-weight: 900;
-  line-height: 1.6;
-  letter-spacing: 0.08em;
-  color: #00897b;
+/* メッセージ見出し画像（新卒ページと同じ配置） */
+main > .wrap > h3.pc {
+  margin: 0 auto;
+  line-height: 0;
 }
-.midcareer-message-sp {
-  margin: 0 0 20px;
-  padding: 0;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.55;
-  letter-spacing: 0.08em;
-  color: #00897b;
-  text-align: left;
+section.challenge .challenge-text .catch {
+  margin: 0;
+}
+section.challenge .challenge-text .catch img {
+  float: left;
+  margin-right: 70px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* 左テキスト / 右写真：ページスクロール中は写真だけ固定（sticky） */
@@ -104,9 +97,9 @@ section.challenge .challenge-inner {
   gap: 48px;
   height: auto;
   max-height: none;
-  font-size: 19px;
-  line-height: 1.7em;
-  padding: 0;
+  font-size: 20px;
+  line-height: 1.8em;
+  padding: 85px 0 110px;
   box-sizing: border-box;
 }
 section.challenge .challenge-text {
@@ -117,17 +110,18 @@ section.challenge .challenge-text {
   padding-right: 0;
 }
 section.challenge .challenge-text > p {
-  margin: 0;
+  margin-top: 0;
   font-weight: 500;
 }
 section.challenge .challenge-photo {
   flex: 1 1 66.666%;
   min-width: 0;
   position: sticky;
-  top: 80px;
+  /* 下の固定お問合せバー（#footer_contact ≈ 141px）を除いた可視領域に合わせる */
+  top: 20px;
   align-self: flex-start;
-  height: calc(100vh - 120px);
-  max-height: 640px;
+  height: calc(100vh - 141px - 20px);
+  max-height: none;
   overflow: hidden;
 }
 section.challenge .challenge-photo img {
@@ -147,20 +141,26 @@ section.challenge .challenge-photo img {
     gap: 28px;
     font-size: 14px;
     line-height: 1.8em;
+    padding: 30px 0 0;
   }
   section.challenge .challenge-text {
     flex: none;
     width: 100%;
     max-width: none;
   }
+  section.challenge .challenge-text .catch img {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 0 70px 15px;
+    margin: 0 auto;
+  }
   section.challenge .challenge-text > p {
     text-align: center;
+    font-size: 12.71px;
+    line-height: 1.8em;
+    margin-top: 30px;
     font-weight: 400;
-  }
-  .midcareer-message-sp {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 16px;
   }
   section.challenge .challenge-photo {
     position: static;
@@ -182,10 +182,10 @@ section.challenge .challenge-photo img {
   section.challenge .challenge-inner {
     gap: 20px;
     font-size: 12.71px;
+    padding-bottom: 0;
   }
-  .midcareer-message-sp {
-    font-size: 22px;
-    letter-spacing: 0.06em;
+  section.challenge .challenge-text .catch img {
+    padding: 0 20px 10px;
   }
   section.challenge .challenge-photo img {
     max-height: 280px;
