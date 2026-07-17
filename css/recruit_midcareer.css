@@ -21,6 +21,10 @@ nav.tab ul.tab li:nth-child(3) {
   left: -26px;
   z-index: 10;
 }
+/* アクティブタブを最前面に */
+nav.tab ul.tab li:has(> a.nohover) {
+  z-index: 20;
+}
 
 @media screen and (max-width: 980px) {
   main > h2 > img {

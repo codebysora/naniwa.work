@@ -30,6 +30,10 @@ nav.tab ul.tab li:nth-child(3) {
 	left: -26px;
 	z-index: 1;
 }
+/* アクティブタブを最前面に（新卒→中途→職方） */
+nav.tab ul.tab li:has(> a.nohover) {
+	z-index: 20;
+}
 
 @media screen and (max-width: 980px) {
 	main > h2 > img {
