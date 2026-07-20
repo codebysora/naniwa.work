@@ -228,7 +228,7 @@ ul.flex.entries li img {
 }
 
 section.ideal {
-  background: url("../img/recruit_newgraduate/repeat_bg1.gif");
+  background: url("../img/recruit_midcareer/midcareer_repeat_bg1.png");
   padding: 30px 0 45px;
   background-size: 20px 20px;
 }
@@ -408,6 +408,9 @@ section.requirements table td p {
 section.requirements table td p + p {
   margin-top: 1em;
 }
+section.requirements ul.flex.entries {
+  margin: 55px auto 100px;
+}
 section.requirements iframe {
   margin: 15px auto 70px;
   max-width: 100%;
@@ -444,20 +447,12 @@ section.requirements iframe {
 }
 
 section.flow {
-  background: #00897b url("../img/recruit_newgraduate/repeat_bg2.gif");
+  background: #00897b url("../img/recruit_midcareer/midcareer_repeat_bg2.png");
   padding: 50px 0 45px;
   background-size: 20px 20px;
 }
 section.flow h3 {
   margin: 0 auto;
-}
-section.flow .flow-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.1em;
-  margin: 0;
 }
 section.flow > div {
   padding-top: 70px;
@@ -470,37 +465,23 @@ section.flow > div {
   section.flow > div {
     padding-top: 22px;
   }
-  section.flow .flow-title {
-    font-size: 18px;
+  section.flow h3 img {
+    width: 134px;
+    height: auto;
   }
 }
 
 section.catch {
   padding: 80px 0;
 }
-section.catch .catch-message {
-  max-width: 786px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.9;
-  font-weight: 600;
-  color: #1a2b2f;
-}
-section.catch .catch-message strong {
-  display: block;
-  color: #00897b;
-  font-size: 26px;
-  margin-bottom: 12px;
+section.catch > div {
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 980px) {
   section.catch {
-    padding: 40px 20px 40px;
+    padding: 40px 0 0;
   }
-  section.catch .catch-message {
-    font-size: 14px;
-  }
-  section.catch .catch-message strong {
-    font-size: 16px;
+  section.catch > div {
+    padding-bottom: 40px;
   }
 }
