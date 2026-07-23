@@ -218,8 +218,8 @@
 			<div class="wrap">
 				<h3 align="center"><img src="img/common/title_fotter_recruit@2x.png" alt="求人募集" height="38" /></h3>
 				<ul class="flex">
-					<li><a href="recruit_newgraduate.php"><img src="img/common/bnr_recruit1@2x.jpg" alt="新卒採用" height="149" /></a></li>
-					<li><a href="recruit_partner.php"><img src="img/common/bnr_recruit2@2x.jpg" alt="職方募集" height="149" /></a></li>
+					<li><a href="recruit_newgraduate.php"><img src="img/common/bnr_recruit1@2x.png" alt="新卒採用" height="149" /></a></li>
+					<li><a href="recruit_partner.php"><img src="img/common/bnr_recruit2@2x.png" alt="職方募集" height="149" /></a></li>
 				</ul>
 			</div>
 		</section>
